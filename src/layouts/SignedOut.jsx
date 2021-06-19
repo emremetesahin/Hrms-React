@@ -1,12 +1,12 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { Button, Menu } from 'semantic-ui-react'
 
-export default function SignedOut(props) {
+export default function SignedOut({signIn}) {
     return (
         <div>
             <Menu.Item>
-            <Button onClick={props.signIn} primary>Giriş Yap</Button>
-            <Button primary style={{marginLeft:"0.5em"}}>Kayıt Ol</Button>
+            <Button primary onClick={signIn}>Giriş Yap</Button>
+            <Button primary style={{marginLeft:"0.5em"}}>Kayıt ol</Button>
             </Menu.Item>
         </div>
     )
